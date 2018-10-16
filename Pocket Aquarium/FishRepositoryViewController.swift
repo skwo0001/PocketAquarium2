@@ -1,14 +1,14 @@
 //
-//  EditFishViewController.swift
+//  FishRepositoryViewController.swift
 //  Pocket Aquarium
 //
-//  Created by Sze Yan Kwok on 13/10/18.
+//  Created by Sze Yan Kwok on 16/10/18.
 //  Copyright © 2018 Monash University. All rights reserved.
 //
 
 import UIKit
 
-class EditFishViewController: UIViewController {
+class FishRepositoryViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

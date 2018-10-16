@@ -38,6 +38,10 @@ class AddFishViewController: UIViewController, UIImagePickerControllerDelegate, 
         createFishPicker()
     }
     
+    @IBAction func cancelView(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
     //After user tap the icon the action sheet will be shown
     @objc func imageTapped() {
         let alert = UIAlertController(title: "Change Fish's Icon", message: nil, preferredStyle: .actionSheet)

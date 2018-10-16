@@ -1287,13 +1287,13 @@ pH</string>
                                                                             <rect key="frame" x="0.0" y="0.0" width="276" height="20.5"/>
                                                                             <subviews>
                                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Cleaning" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kav-P8-IyH">
-                                                                                    <rect key="frame" x="0.0" y="0.0" width="209" height="20.5"/>
+                                                                                    <rect key="frame" x="0.0" y="0.0" width="67" height="20.5"/>
                                                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                                     <nil key="textColor"/>
                                                                                     <nil key="highlightedColor"/>
                                                                                 </label>
                                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Pending" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vqf-LM-IC7">
-                                                                                    <rect key="frame" x="209" y="0.0" width="67" height="20.5"/>
+                                                                                    <rect key="frame" x="67" y="0.0" width="209" height="20.5"/>
                                                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                                                     <color key="textColor" red="0.97647058819999999" green="0.83921568629999999" blue="0.28627450980000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                                     <nil key="highlightedColor"/>
@@ -1709,19 +1709,19 @@ Testing</string>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="wjF-uJ-ghQ" userLabel="fishText">
                                                     <rect key="frame" x="74" y="0.0" width="172" height="64"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Fish Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2yq-rc-93R">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fish Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2yq-rc-93R">
                                                             <rect key="frame" x="0.0" y="0.0" width="81" height="20.5"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Description like saltwater" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KcC-hr-iY6">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description like saltwater" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KcC-hr-iY6">
                                                             <rect key="frame" x="0.0" y="25.5" width="172" height="18"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                             <color key="textColor" red="0.57414853570000002" green="0.57416242360000003" blue="0.57415497299999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="j1Q-Gp-xKM" customClass="CosmosView" customModule="Cosmos">
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j1Q-Gp-xKM" customClass="CosmosView" customModule="Cosmos">
                                                             <rect key="frame" x="0.0" y="48.5" width="120" height="15.5"/>
                                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <userDefinedRuntimeAttributes>
@@ -1790,7 +1790,7 @@ Testing</string>
                                             </constraints>
                                         </imageView>
                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="lZg-FS-rBN" userLabel="fishInfo">
-                                            <rect key="frame" x="0.0" y="96.5" width="150" height="53.5"/>
+                                            <rect key="frame" x="0.0" y="58.5" width="150" height="91.5"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fish Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gr2-mt-EzD">
                                                     <rect key="frame" x="0.0" y="0.0" width="150" height="16"/>
@@ -1799,16 +1799,16 @@ Testing</string>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" translatesAutoresizingMaskIntoConstraints="NO" id="mHK-6A-pWi" userLabel="aggressive">
-                                                    <rect key="frame" x="0.0" y="20.5" width="150" height="12"/>
+                                                    <rect key="frame" x="0.0" y="20.5" width="150" height="50"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Aggressive" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kWe-PW-VM4">
-                                                            <rect key="frame" x="0.0" y="0.0" width="53" height="12"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="53" height="50"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                                             <color key="textColor" red="0.57414853570000002" green="0.57416242360000003" blue="0.57415497299999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="son-3P-NJg" customClass="CosmosView" customModule="Cosmos">
-                                                            <rect key="frame" x="80" y="0.0" width="70" height="12"/>
+                                                        <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="son-3P-NJg" customClass="CosmosView" customModule="Cosmos">
+                                                            <rect key="frame" x="80" y="0.0" width="70" height="50"/>
                                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <userDefinedRuntimeAttributes>
                                                                 <userDefinedRuntimeAttribute type="number" keyPath="starSize">
@@ -1834,7 +1834,7 @@ Testing</string>
                                                     </subviews>
                                                 </stackView>
                                                 <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" translatesAutoresizingMaskIntoConstraints="NO" id="uOp-2U-Ojn" userLabel="number">
-                                                    <rect key="frame" x="0.0" y="36.5" width="150" height="17"/>
+                                                    <rect key="frame" x="0.0" y="74.5" width="150" height="17"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AD7-lj-98e">
                                                             <rect key="frame" x="0.0" y="0.0" width="24" height="17"/>
@@ -2855,7 +2855,7 @@ Testing</string>
         <!--Fish Repository-->
         <scene sceneID="BUV-oV-Q9v">
             <objects>
-                <viewController id="KzF-uT-iie" sceneMemberID="viewController">
+                <viewController id="KzF-uT-iie" customClass="FishRepositoryViewController" customModule="Pocket_Aquarium" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="BgU-cf-Kjd">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -3325,7 +3325,11 @@ Testing</string>
                         <viewLayoutGuide key="safeArea" id="DMh-qm-Byv"/>
                     </view>
                     <navigationItem key="navigationItem" title="Add New Fish" id="aVX-fy-8dh">
-                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="jK1-MQ-WIP"/>
+                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="jK1-MQ-WIP">
+                            <connections>
+                                <action selector="cancelView:" destination="mbB-kM-DM7" id="uPv-HF-aIF"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="iconImageField" destination="ofU-Dh-BCj" id="m0O-RF-vhF"/>
@@ -3345,7 +3349,7 @@ Testing</string>
         <!--Fish Detail-->
         <scene sceneID="DmI-sl-ZV7">
             <objects>
-                <viewController title="Fish Detail" id="ab1-dp-OuA" customClass="EditFishViewController" customModule="Pocket_Aquarium" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Fish Detail" id="ab1-dp-OuA" customClass="FishDetailViewController" customModule="Pocket_Aquarium" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vQC-ue-U97">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -3752,8 +3756,8 @@ Testing</string>
                                     </stackView>
                                 </subviews>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="w7O-dw-plx" userLabel="aggressiveLevel">
-                                <rect key="frame" x="22" y="427.5" width="331" height="54"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="w7O-dw-plx" userLabel="aggressiveLevel">
+                                <rect key="frame" x="22" y="427.5" width="331" height="79"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AGGRESSIVE RATING" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YqM-pi-3Eu">
                                         <rect key="frame" x="0.0" y="0.0" width="331" height="19"/>
@@ -3761,8 +3765,8 @@ Testing</string>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="84H-yo-Ccn" customClass="CosmosView" customModule="Cosmos">
-                                        <rect key="frame" x="0.0" y="29" width="331" height="25"/>
+                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="84H-yo-Ccn" customClass="CosmosView" customModule="Cosmos">
+                                        <rect key="frame" x="0.0" y="29" width="331" height="50"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="totalStars">
@@ -3817,7 +3821,7 @@ Testing</string>
                                     </button>
                                 </subviews>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="OsD-OQ-VXk" userLabel="gotNumber">
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="OsD-OQ-VXk" userLabel="gotNumber">
                                 <rect key="frame" x="22" y="503.5" width="331" height="59"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NUMBER YOU GOT" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8H8-ON-rjC">
@@ -4348,8 +4352,8 @@ Testing</string>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="1Rt-CZ-YWg"/>
-        <segue reference="Yoz-gD-6BL"/>
-        <segue reference="pMs-SZ-ueZ"/>
+        <segue reference="ecq-Vt-mlh"/>
+        <segue reference="Sna-FZ-hJ7"/>
         <segue reference="yB8-ke-qMS"/>
     </inferredMetricsTieBreakers>
 </document>

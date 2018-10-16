@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4A0469272171ACCB0042EA61 /* EditFishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0469262171ACCB0042EA61 /* EditFishViewController.swift */; };
+		4A0469272171ACCB0042EA61 /* FishDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0469262171ACCB0042EA61 /* FishDetailViewController.swift */; };
 		4A04692D2171B50F0042EA61 /* AddFishImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A04692C2171B50F0042EA61 /* AddFishImageCollectionViewCell.swift */; };
 		4A04692F2171B9430042EA61 /* FishDetailCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A04692E2171B9430042EA61 /* FishDetailCollectionViewCell.swift */; };
+		4A0C8E4E2175D84700D3EFB3 /* FishRepositoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0C8E4D2175D84700D3EFB3 /* FishRepositoryViewController.swift */; };
 		4A402B0C216DB75A00A28042 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A402B0B216DB75A00A28042 /* AuthViewController.swift */; };
 		4A402B0E216DC00A00A28042 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A402B0D216DC00A00A28042 /* HomeViewController.swift */; };
 		4A402B10216EF4A500A28042 /* AddFishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A402B0F216EF4A500A28042 /* AddFishViewController.swift */; };
@@ -50,9 +51,10 @@
 		0E5E05A994BAD8BB2FDBF0D5 /* Pods-Pocket Aquarium.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pocket Aquarium.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Pocket Aquarium/Pods-Pocket Aquarium.debug.xcconfig"; sourceTree = "<group>"; };
 		35BB21CFA636A7EB462870DC /* Pods-Pocket Aquarium.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pocket Aquarium.release.xcconfig"; path = "Pods/Target Support Files/Pods-Pocket Aquarium/Pods-Pocket Aquarium.release.xcconfig"; sourceTree = "<group>"; };
 		4996721E38187FF3A5EE76C9 /* Pods-Pocket AquariumUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pocket AquariumUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Pocket AquariumUITests/Pods-Pocket AquariumUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		4A0469262171ACCB0042EA61 /* EditFishViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditFishViewController.swift; sourceTree = "<group>"; };
+		4A0469262171ACCB0042EA61 /* FishDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishDetailViewController.swift; sourceTree = "<group>"; };
 		4A04692C2171B50F0042EA61 /* AddFishImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFishImageCollectionViewCell.swift; sourceTree = "<group>"; };
 		4A04692E2171B9430042EA61 /* FishDetailCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishDetailCollectionViewCell.swift; sourceTree = "<group>"; };
+		4A0C8E4D2175D84700D3EFB3 /* FishRepositoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishRepositoryViewController.swift; sourceTree = "<group>"; };
 		4A402B0B216DB75A00A28042 /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
 		4A402B0D216DC00A00A28042 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		4A402B0F216EF4A500A28042 /* AddFishViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFishViewController.swift; sourceTree = "<group>"; };
@@ -168,11 +170,12 @@
 				4A402B0F216EF4A500A28042 /* AddFishViewController.swift */,
 				4AA5CF3F216F98820063B3E4 /* AddFish2ViewController.swift */,
 				4AA5CF41217028040063B3E4 /* Fish.swift */,
-				4A0469262171ACCB0042EA61 /* EditFishViewController.swift */,
+				4A0469262171ACCB0042EA61 /* FishDetailViewController.swift */,
 				4A04692C2171B50F0042EA61 /* AddFishImageCollectionViewCell.swift */,
 				4A04692E2171B9430042EA61 /* FishDetailCollectionViewCell.swift */,
 				4A5E13012171E13300279E66 /* util.swift */,
 				4A5E13032172EFD300279E66 /* ImageManager.swift */,
+				4A0C8E4D2175D84700D3EFB3 /* FishRepositoryViewController.swift */,
 			);
 			path = "Pocket Aquarium";
 			sourceTree = "<group>";
@@ -431,6 +434,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4A402B10216EF4A500A28042 /* AddFishViewController.swift in Sources */,
+				4A0C8E4E2175D84700D3EFB3 /* FishRepositoryViewController.swift in Sources */,
 				4AA5CF42217028040063B3E4 /* Fish.swift in Sources */,
 				4A402B0C216DB75A00A28042 /* AuthViewController.swift in Sources */,
 				4A5E13022171E13300279E66 /* util.swift in Sources */,
@@ -440,7 +444,7 @@
 				4A402B0E216DC00A00A28042 /* HomeViewController.swift in Sources */,
 				4AA5CF40216F98820063B3E4 /* AddFish2ViewController.swift in Sources */,
 				4A5E13042172EFD300279E66 /* ImageManager.swift in Sources */,
-				4A0469272171ACCB0042EA61 /* EditFishViewController.swift in Sources */,
+				4A0469272171ACCB0042EA61 /* FishDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

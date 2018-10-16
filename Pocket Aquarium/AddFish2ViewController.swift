@@ -95,6 +95,7 @@ class AddFish2ViewController: UIViewController, UIImagePickerControllerDelegate,
     
     @IBAction func cancelButton(_ sender: Any) {
         
+        self.dismiss(animated: true, completion: nil)
     }
     
     @IBAction func saveButton(_ sender: Any) {
@@ -135,16 +136,24 @@ class AddFish2ViewController: UIViewController, UIImagePickerControllerDelegate,
             
             newFishRef.setValue(fishItem)
             
-            displayErrorMessage(message: "Fish created!", title: "")
-            
+            displayFinishMessage(message: "Fish created!", title: "")
         }
     }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         collectionView.delegate = self
         collectionView.dataSource = self
+    }
+    
+    func displayFinishMessage(message:String,title:String) {
+        let alertController = UIAlertController(title: title, message: message, preferredStyle: UIAlertControllerStyle.alert)
+        alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.default, handler: {action in
+            self.dismiss(animated: true, completion: nil)
+        }))
+        self.present(alertController, animated: true, completion: nil)
     }
     
     func isValidInput() -> Bool{
