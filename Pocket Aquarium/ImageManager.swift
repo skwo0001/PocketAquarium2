@@ -56,6 +56,45 @@ class ImageManager {
         self.saveLocalData(fileName: "\(fileName)", imageData: imageData)
     }
     
+    static func saveIcon(image : UIImage?, thisTankRef : DatabaseReference){
+        guard let thisImage = image else {
+            print("image nil")
+            return
+        }
+        guard let userID = Auth.auth().currentUser?.uid else{
+            print("userid nil")
+            return
+        }
+        
+        var imageData = Data()
+        imageData = UIImageJPEGRepresentation(image!, 0.8)!
+        let metadata = StorageMetadata()
+        metadata.contentType = "image/jpg"
+        
+        //1. create an unique id
+        let imageRef = thisTankRef.child("iconURL").childByAutoId()
+        let fileName = imageRef.key
+        
+        //2. create a new storage reference
+        let newImageStorageRef = self.storageRef.child("\(userID)/\(fileName!)")
+        //3. save the image to storage
+        newImageStorageRef.putData(imageData, metadata: metadata) { (metaData, error) in
+            newImageStorageRef.downloadURL { (url,error) -> () in
+                guard let thisURL = url else {
+                    return
+                        print("url nil")
+                }
+                self.imageDownloadURL = thisURL.absoluteString
+                var imageItem = [
+                    "\(fileName)" : imageDownloadURL
+                ]
+                thisTankRef.child("iconURL").updateChildValues(imageItem)
+                print("save photo successfully")
+            }
+        }
+        self.saveLocalData(fileName: "\(fileName)", imageData: imageData)
+    }
+    
     static func retrieveImageData(fileName: String) -> UIImage?{
         let path = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0] as String
         let url = NSURL(fileURLWithPath: path)

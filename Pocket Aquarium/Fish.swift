@@ -11,6 +11,7 @@ import UIKit
 class Fish: NSObject {
     var fishId : String
     var fishIcon : UIImageView
+    var fishIconName : String
     var fishName : String
     var fishType : String
     var fishMinTemp : Int
@@ -21,9 +22,10 @@ class Fish: NSObject {
     var fishRating : Int
     var fishNumber : Int
     
-    init(id:String, icon:UIImageView, name:String, type:String, minTemp:Int, maxTemp:Int, minpH:Double, maxpH:Double, photo:[String], rating: Int, number:Int){
+    init(id:String, icon:UIImageView, iconName: String, name:String, type:String, minTemp:Int, maxTemp:Int, minpH:Double, maxpH:Double, photo:[String], rating: Int, number:Int){
         self.fishId = id
         self.fishIcon = icon
+        self.fishIconName = iconName
         self.fishName = name
         self.fishType = type
         self.fishMinTemp = minTemp

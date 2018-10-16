@@ -12,7 +12,6 @@ import Firebase
 
 class AddFish2ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UICollectionViewDelegate, UICollectionViewDataSource{
 
-
     @IBOutlet weak var minpHSlider: UISlider!
     @IBOutlet weak var minpHLabel: UILabel!
     @IBOutlet weak var maxpHSlider: UISlider!
@@ -23,12 +22,15 @@ class AddFish2ViewController: UIViewController, UIImagePickerControllerDelegate,
     @IBOutlet weak var collectionView: UICollectionView!
     var currentFish: Fish?
     
+    let fishes = ["Clownfish","Crab","Flounder","Flying Fish","Gnathanodon","Goldfish","Hermit Crab","Jellyfish","Lobster","Octopus","Paracanthurus","Puffer Fish","Seahorse","Seasnake","Seaweed","Shell","Shrimp","Siganus Vulpinus","Starfish","Swordfish","Turtle","Urchin","Yellow Tang"]
+    
+    //create array to store image
     var imageArray:  [UIImage] = {
         var manyImages = [UIImage]()
         return manyImages
     }()
     
-    
+    //add photos for fish
     @IBAction func importImage(_ sender: Any) {
         if (imageArray.count < 4){
             let alert = UIAlertController(title: "Upload Fish's Photo", message: nil, preferredStyle: .actionSheet)
@@ -98,24 +100,27 @@ class AddFish2ViewController: UIViewController, UIImagePickerControllerDelegate,
     @IBAction func saveButton(_ sender: Any) {
         if isValidInput(){
             let name = currentFish!.fishName
+            let icon = currentFish!.fishIcon.image
             let type = currentFish!.fishType
+            let iconName = currentFish!.fishIconName
             let minTemp = currentFish!.fishMinTemp
             let maxTemp = currentFish!.fishMaxTemp
-            let minpH = minpHLabel.text!
-            let maxpH = maxpHLabel.text!
-            let number = numberTextField.text!
+            let minpH = Double(minpHLabel.text!)
+            let maxpH = Double(maxpHLabel.text!)
+            let number = Int(numberTextField.text!)
             //get the rating value of the rating star
             let rating = Int(ratingStar.rating)
             let newFishRef = self.fishRef.childByAutoId()
             
             let fishItem = [
                 "fishId" : newFishRef.key!,
+                "fishIconName" : iconName,
                 "fishName" : name,
                 "fishType" : type,
                 "fishMinTemp" : minTemp,
                 "fishMaxTemp" : maxTemp,
-                "fishMinpH" : minpH,
-                "fishMaxpH" : maxpH,
+                "fishMinpH" : minpH!,
+                "fishMaxpH" : maxpH!,
                 "fishRating" : rating,
             "fishNumber" : number] as [String : Any]
         
@@ -123,6 +128,9 @@ class AddFish2ViewController: UIViewController, UIImagePickerControllerDelegate,
                 ImageManager.savePhoto(image: image, thisTankRef: newFishRef)
                 //print(image)
                 print("Save photo successfully")
+            }
+            if (iconName == "fish"){
+                ImageManager.saveIcon(image: icon, thisTankRef: newFishRef)
             }
             
             newFishRef.setValue(fishItem)
