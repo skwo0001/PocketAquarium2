@@ -11,6 +11,7 @@
 		4A04692D2171B50F0042EA61 /* AddFishImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A04692C2171B50F0042EA61 /* AddFishImageCollectionViewCell.swift */; };
 		4A04692F2171B9430042EA61 /* FishDetailCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A04692E2171B9430042EA61 /* FishDetailCollectionViewCell.swift */; };
 		4A0C8E4E2175D84700D3EFB3 /* FishRepositoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0C8E4D2175D84700D3EFB3 /* FishRepositoryViewController.swift */; };
+		4A0C8E502176226E00D3EFB3 /* FishTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0C8E4F2176226E00D3EFB3 /* FishTableViewCell.swift */; };
 		4A402B0C216DB75A00A28042 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A402B0B216DB75A00A28042 /* AuthViewController.swift */; };
 		4A402B0E216DC00A00A28042 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A402B0D216DC00A00A28042 /* HomeViewController.swift */; };
 		4A402B10216EF4A500A28042 /* AddFishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A402B0F216EF4A500A28042 /* AddFishViewController.swift */; };
@@ -55,6 +56,7 @@
 		4A04692C2171B50F0042EA61 /* AddFishImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFishImageCollectionViewCell.swift; sourceTree = "<group>"; };
 		4A04692E2171B9430042EA61 /* FishDetailCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishDetailCollectionViewCell.swift; sourceTree = "<group>"; };
 		4A0C8E4D2175D84700D3EFB3 /* FishRepositoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishRepositoryViewController.swift; sourceTree = "<group>"; };
+		4A0C8E4F2176226E00D3EFB3 /* FishTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishTableViewCell.swift; sourceTree = "<group>"; };
 		4A402B0B216DB75A00A28042 /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
 		4A402B0D216DC00A00A28042 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		4A402B0F216EF4A500A28042 /* AddFishViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFishViewController.swift; sourceTree = "<group>"; };
@@ -176,6 +178,7 @@
 				4A5E13012171E13300279E66 /* util.swift */,
 				4A5E13032172EFD300279E66 /* ImageManager.swift */,
 				4A0C8E4D2175D84700D3EFB3 /* FishRepositoryViewController.swift */,
+				4A0C8E4F2176226E00D3EFB3 /* FishTableViewCell.swift */,
 			);
 			path = "Pocket Aquarium";
 			sourceTree = "<group>";
@@ -434,6 +437,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4A402B10216EF4A500A28042 /* AddFishViewController.swift in Sources */,
+				4A0C8E502176226E00D3EFB3 /* FishTableViewCell.swift in Sources */,
 				4A0C8E4E2175D84700D3EFB3 /* FishRepositoryViewController.swift in Sources */,
 				4AA5CF42217028040063B3E4 /* Fish.swift in Sources */,
 				4A402B0C216DB75A00A28042 /* AuthViewController.swift in Sources */,

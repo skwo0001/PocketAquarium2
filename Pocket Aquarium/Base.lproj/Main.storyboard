@@ -2874,7 +2874,7 @@ Testing</string>
                                 <rect key="frame" x="0.0" y="168" width="375" height="499"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="fishCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="78" id="hCZ-2v-jz9">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="fishCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="78" id="hCZ-2v-jz9" customClass="FishTableViewCell" customModule="Pocket_Aquarium" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="78"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hCZ-2v-jz9" id="osX-ZJ-9CQ">
@@ -2923,6 +2923,12 @@ Testing</string>
                                                 <constraint firstAttribute="trailing" secondItem="kDR-H0-cHL" secondAttribute="trailing" constant="20" id="UwS-vB-GEp"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="fishDescription" destination="DSF-eE-gxb" id="YNL-af-FSw"/>
+                                            <outlet property="fishIcon" destination="nAb-WU-xwP" id="pDG-6J-Nxl"/>
+                                            <outlet property="fishName" destination="mqb-jF-dQZ" id="JVE-4w-G4p"/>
+                                            <outlet property="fishNumber" destination="8e4-eu-1IX" id="lk7-tX-npq"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -2969,6 +2975,9 @@ Testing</string>
                     </navigationItem>
                     <nil key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="filterSegment" destination="Q55-9H-odg" id="Oum-bQ-WuZ"/>
+                        <outlet property="fishTableView" destination="w6p-ED-S20" id="fY9-zj-GbQ"/>
+                        <outlet property="searchBar" destination="PTM-MI-wSp" id="aE8-fT-PdQ"/>
                         <outlet property="searchDisplayController" destination="Ja3-09-yhx" id="kXh-vX-jzU"/>
                         <segue destination="ab1-dp-OuA" kind="show" id="Xuk-d7-F9q"/>
                     </connections>
@@ -3359,6 +3368,7 @@ Testing</string>
                                 <gestureRecognizers/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="5Ay-ez-Zbs" appends="YES" id="ELc-gS-Bpq"/>
+                                    <outletCollection property="gestureRecognizers" destination="XOE-4L-3nf" appends="YES" id="gBn-sv-GMa"/>
                                 </connections>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="top" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="msF-Zo-6XW">
@@ -3546,6 +3556,7 @@ Testing</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Iv-dY-VUC" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <swipeGestureRecognizer direction="right" id="5Ay-ez-Zbs"/>
+                <swipeGestureRecognizer direction="right" id="XOE-4L-3nf"/>
             </objects>
             <point key="canvasLocation" x="3324" y="19.340329835082461"/>
         </scene>
@@ -4352,7 +4363,7 @@ Testing</string>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="1Rt-CZ-YWg"/>
-        <segue reference="ecq-Vt-mlh"/>
+        <segue reference="Xuk-d7-F9q"/>
         <segue reference="Sna-FZ-hJ7"/>
         <segue reference="yB8-ke-qMS"/>
     </inferredMetricsTieBreakers>
