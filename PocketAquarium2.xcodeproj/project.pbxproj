@@ -12,6 +12,7 @@
 		4A04692F2171B9430042EA61 /* FishDetailCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A04692E2171B9430042EA61 /* FishDetailCollectionViewCell.swift */; };
 		4A0C8E4E2175D84700D3EFB3 /* FishRepositoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0C8E4D2175D84700D3EFB3 /* FishRepositoryViewController.swift */; };
 		4A0C8E502176226E00D3EFB3 /* FishTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0C8E4F2176226E00D3EFB3 /* FishTableViewCell.swift */; };
+		4A0C8E5C2176E1B100D3EFB3 /* EditFishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0C8E5B2176E1B100D3EFB3 /* EditFishViewController.swift */; };
 		4A402B0C216DB75A00A28042 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A402B0B216DB75A00A28042 /* AuthViewController.swift */; };
 		4A402B0E216DC00A00A28042 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A402B0D216DC00A00A28042 /* HomeViewController.swift */; };
 		4A402B10216EF4A500A28042 /* AddFishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A402B0F216EF4A500A28042 /* AddFishViewController.swift */; };
@@ -57,6 +58,7 @@
 		4A04692E2171B9430042EA61 /* FishDetailCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishDetailCollectionViewCell.swift; sourceTree = "<group>"; };
 		4A0C8E4D2175D84700D3EFB3 /* FishRepositoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishRepositoryViewController.swift; sourceTree = "<group>"; };
 		4A0C8E4F2176226E00D3EFB3 /* FishTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishTableViewCell.swift; sourceTree = "<group>"; };
+		4A0C8E5B2176E1B100D3EFB3 /* EditFishViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EditFishViewController.swift; path = "../../../Desktop/5140/iOSPocketAquarium/Pocket Aquarium/Controller/EditFishViewController.swift"; sourceTree = "<group>"; };
 		4A402B0B216DB75A00A28042 /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
 		4A402B0D216DC00A00A28042 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		4A402B0F216EF4A500A28042 /* AddFishViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFishViewController.swift; sourceTree = "<group>"; };
@@ -169,6 +171,7 @@
 				4AB55C3A216D95C100115902 /* GoogleService-Info.plist */,
 				4A402B0B216DB75A00A28042 /* AuthViewController.swift */,
 				4A402B0D216DC00A00A28042 /* HomeViewController.swift */,
+				4A0C8E5B2176E1B100D3EFB3 /* EditFishViewController.swift */,
 				4A402B0F216EF4A500A28042 /* AddFishViewController.swift */,
 				4AA5CF3F216F98820063B3E4 /* AddFish2ViewController.swift */,
 				4AA5CF41217028040063B3E4 /* Fish.swift */,
@@ -442,6 +445,7 @@
 				4AA5CF42217028040063B3E4 /* Fish.swift in Sources */,
 				4A402B0C216DB75A00A28042 /* AuthViewController.swift in Sources */,
 				4A5E13022171E13300279E66 /* util.swift in Sources */,
+				4A0C8E5C2176E1B100D3EFB3 /* EditFishViewController.swift in Sources */,
 				EDB449632164AD09001EFBD2 /* AppDelegate.swift in Sources */,
 				4A04692F2171B9430042EA61 /* FishDetailCollectionViewCell.swift in Sources */,
 				4A04692D2171B50F0042EA61 /* AddFishImageCollectionViewCell.swift in Sources */,
